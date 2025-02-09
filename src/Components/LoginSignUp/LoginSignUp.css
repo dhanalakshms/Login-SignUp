@@ -1,30 +1,29 @@
-/* Reset and Centering */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
-    min-height: 100vh;  /* Ensure full height */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #3C009D;  /* Purple background */
+    background: #3C009D;
     font-family: Arial, sans-serif;
 }
 
-/* Main Container */
+
 .container {
     display: flex;
     flex-direction: column;
-    width: 95%;            /* Responsive width */
+    width: 95%;
     max-width: 800px;
-    min-width: 550px;    /* Increased max size for laptops */
+    min-width: 550px;
     background: #fff;
-    padding: 40px 30px;    /* Increased padding for spacious layout */
-    border-radius: 15px;   /* Slightly more rounded corners */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);  /* Deeper shadow for better contrast */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
 }
 
-/* Header Styling */
 .header {
     display: flex;
     flex-direction: column;
@@ -36,7 +35,7 @@ body, html {
 
 .text {
     color: #3C009D;
-    font-size: 3rem;  /* Larger text for laptops */
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
 }
@@ -48,7 +47,6 @@ body, html {
     border-radius: 9px;
 }
 
-/* Input Fields */
 .inputs {
     margin-top: 50px;
     display: flex;
@@ -77,10 +75,9 @@ body, html {
     border: none;
     outline: none;
     color: #797979;
-    font-size: 1.2rem;  /* Increased font size */
+    font-size: 1.2rem;
 }
 
-/* Forgot Password */
 .forgot-password {
     padding-left: 5px;
     margin-top: 20px;
@@ -93,7 +90,6 @@ body, html {
     cursor: pointer;
 }
 
-/* Submit Button Container */
 .submit-container {
     display: flex;
     gap: 30px;
@@ -102,12 +98,12 @@ body, html {
     justify-content: center;
 }
 
-/* Button Styles */
-.submit, .gray {
+.submit,
+.gray {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;         /* Buttons take less width but adapt */
+    width: 45%;
     max-width: 250px;
     height: 60px;
     border-radius: 50px;
@@ -137,13 +133,11 @@ body, html {
     color: #4c00b4;
 }
 
-/* Active Button State */
 .active {
     background-color: #4c00b4;
     color: white;
 }
 
-/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .text {
         font-size: 2.5rem;
@@ -157,7 +151,8 @@ body, html {
         font-size: 1rem;
     }
 
-    .submit, .gray {
+    .submit,
+    .gray {
         width: 100%;
         height: 50px;
         font-size: 1rem;
